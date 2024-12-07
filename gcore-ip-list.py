@@ -1,6 +1,6 @@
 import json
 import requests
-url = 'api.gcore.com/cdn/public-ip-list'
+url = 'https://api.gcore.com/cdn/public-ip-list'
 response = requests.get(url)
 if response.status_code == 200:
     data = response.json()
